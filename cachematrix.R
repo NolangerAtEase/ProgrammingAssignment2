@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These two functions respctively create a list of a matrix and its inverse,
+## and the second checks if the inverse has already been calculated, and if so,
+## retrieves it without recalculation
 
-## Write a short comment describing this function
+## Similar to the MakeVector Function, makeCacheMatrix takes in a matrix and
+## creates a list of the matrix's value and inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -17,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve returns the inverse of a matrix x. If the inverse has already
+## been calculated, it returns the cached value.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
